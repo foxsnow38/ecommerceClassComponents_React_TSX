@@ -1,0 +1,36 @@
+.fontShowroom{
+font-family: 'Helvetica Neue', sans-serif;
+font-family: 'Helvetica 25 UltraLight', sans-serif;
+font-family: 'Helvetica 35 Thin', sans-serif;
+font-family: 'Helvetica 45 Light', sans-serif;
+font-family: 'Helvetica 55 Roman', sans-serif;
+font-family: 'Helvetica 65 Medium', sans-serif;
+}
+.Navbar{
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 19px !important;
+    height: 112px !important;
+    background: none !important;
+    border: none !important;
+    position: absolute !important;
+width: 100%;
+    ul{
+        flex: 1 !important;
+        margin: 0 5% !important;
+      
+    }
+}
+.navbarLogo{
+    font-size:70px !important;
+     font-weight:bold !important;
+     flex:1;
+     justify-content:center !important;
+     color:#000F08 !important;
+    a{
+        justify-content: center !important;
+    }
+}
+
+@media screen and  (max-width:1110px ) { 
+.Navbar{font-size: 16px !important;}
+ }

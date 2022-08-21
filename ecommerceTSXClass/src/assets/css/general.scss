@@ -1,0 +1,11 @@
+.p-menuitem-link{
+ // <NavbarBtn>
+&:hover{    background: none !important;}
+&:focus{    outline: 0 !important;
+    box-shadow: none !important;}
+
+   
+}
+.p-menubar-root-list{
+    width: 100%;
+}

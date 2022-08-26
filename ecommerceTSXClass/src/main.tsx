@@ -11,6 +11,7 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import NavbarContextProvider from './context/NavbarContextProvider/NavbarContextProvider';
+import PhotosContextProvider from './context/PhotosContextProvider'
 
 
 
@@ -18,9 +19,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
       <BrowserRouter>
     <NavbarContextProvider>
+      <PhotosContextProvider>
     
     <App />
    
+   </PhotosContextProvider>
     </NavbarContextProvider>
     </BrowserRouter>
   </React.StrictMode>

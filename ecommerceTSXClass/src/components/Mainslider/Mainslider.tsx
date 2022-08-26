@@ -1,13 +1,15 @@
- import React, { Component } from 'react' 
+  import React, { Component } from 'react' 
   import moduleCSS from './Mainslider.module.scss' 
   import { Galleria } from 'primereact/galleria';
   import './GalleriaDemo.css';
-  import images from "../../assets/images/resim1.jpg"
-  
+  import { photosContext } from '../../context/PhotosContextProvider/PhotosContextProvider';
+
+
 
   type mainSliderStateType = {
     images:({ itemImageSrc: string; alt: string; thumbnailImageSrc?: string; }[]|null[]),
-    images2:({ itemImageSrc: string; alt: string; thumbnailImageSrc?: string; }[]|null[])
+    images2:({ itemImageSrc: string; alt: string; thumbnailImageSrc?: string; }[]|null[]),
+    images3?:any
 
   }
   type mainSliderTypeItem = { itemImageSrc: string; alt: string; thumbnailImageSrc?: string; }
@@ -48,10 +50,16 @@
    
   ]
 
-  export class Mainslider extends Component<{},mainSliderStateType> { 
+ 
+  
 
+// console.log(importAllImages(require.context('../../assets/images', false, /\.(png|jpe?g|svg)$/)))
 
- thumbnailTemplate = (item:mainSliderTypeItem) => {
+ export class Mainslider extends Component<{},mainSliderStateType> { 
+
+static contextType?= photosContext
+
+thumbnailTemplate = (item:mainSliderTypeItem) => {
     return <img src={item.thumbnailImageSrc} onError={(e:any) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={item.alt} style={{ width: '100%', display: 'block' }} />
   }
 
@@ -63,33 +71,32 @@
     )
 }
 
-
 componentDidMount= ():void =>{
   this.setState({images:photosObject,images2:this.state.images?.slice(0,5)!})
+
   }
+
 
 
 constructor(props:any){
   super(props)
 
+
   this.state={
     images:[],
-    images2:[]
+    images2:[],
+    images3:[]
+    
   }
 }
 
 
 
 itemTemplate = (item: mainSliderTypeItem ) => {
-  return <img src={require(item.itemImageSrc)} onError={(e:any) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={item.alt} style={{ width: '100%', display: 'block' }} />;
+  return <img src={(item.itemImageSrc)} onError={(e:any) => e.target.src='https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png'} alt={item.alt} style={{ width: '100%', display: 'block' }} />;
 }
 
-    // componentDidUpdate(prevProps:any, prevState:any) {
-    //   if (prevState.data !== this.state.data) {
-    //     // Now fetch the new data here.
-    //   }
-    // }
-
+   
     render() { 
    
       const responsiveOptions = [
@@ -106,13 +113,17 @@ itemTemplate = (item: mainSliderTypeItem ) => {
             numVisible: 1
         }
     ];
+
+    const photosObject = this.context as any
+     
+  
       return (
         <div>
             <div className="galleria-demo">
-                
+            
                 <div className="card">
-                    <h5>Positioned at Right</h5>
-                    <Galleria value={this.state.images} responsiveOptions={responsiveOptions} numVisible={5} style={{ maxWidth: '500px' }}
+                 
+                    <Galleria   value={[photosObject[0],photosObject[1],photosObject[2],photosObject[3]]} responsiveOptions={responsiveOptions} numVisible={5} 
                         showThumbnails={false} showIndicators changeItemOnIndicatorHover showIndicatorsOnItem indicatorsPosition="right" item={this.itemTemplate} />
                 </div>
             </div>

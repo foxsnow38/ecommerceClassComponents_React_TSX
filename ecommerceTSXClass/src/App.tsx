@@ -6,9 +6,10 @@ import {
   Link,
   useParams
 } from "react-router-dom";
-import Mainslider from './components/Mainslider';
+
 import Navbar from './components/Navbar';
-import NavbarContextProvider from './context/NavbarContextProvider';
+import Home from './pages/Home';
+
 
 
 type countType ={
@@ -22,28 +23,21 @@ class App extends Component<{},any,any>{
     super(props)
     
   }
-state:any =
-{
-  count : 0,
-  refer:``,
-  defer:3
-}
-
-
-
 render(): ReactNode {
   
   return (
 
     <div className="App">
+
     <Navbar/>
-    <Mainslider/>
+  
 
+   
 
-      <div>
+      <div style={{zIndex:1}}>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/"></Link>
           </li>
           {/* <li>
             <Link to="/about">About</Link>
@@ -60,8 +54,8 @@ render(): ReactNode {
           <Route path="/topics">
          
           </Route>
-          <Route path="/">
-          
+          <Route path="/" element={<Home/>}>
+
           </Route>
         </Routes>
       </div>

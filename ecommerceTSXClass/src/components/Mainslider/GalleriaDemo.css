@@ -6,3 +6,6 @@
 .galleria-demo .custom-indicator-galleria .p-highlight .indicator-text {
     color: var(--primary-color);
 }
+.p-galleria-item-wrapper{
+    display: block !important;
+}

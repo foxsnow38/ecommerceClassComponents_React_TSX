@@ -3,7 +3,7 @@
   
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/InputText';
-import { Button } from 'primereact/Button';
+
 import { Avatar } from 'primereact/Avatar';
 import {  NavbarContext } from '../../context/NavbarContextProvider/NavbarContextProvider';
 
@@ -24,9 +24,6 @@ type navbarStates ={
 
 constructor(props: {} | Readonly<{}>){
 super(props)
-
-
-
 }
 
  render(){
@@ -74,7 +71,6 @@ const {bag} = this.context as {bag:number}
 
 
    
-  <div>
     <Menubar
   model={items}
 
@@ -83,7 +79,7 @@ const {bag} = this.context as {bag:number}
 
 /> 
 
-</div> ) 
+ ) 
 }} 
 
  export default Navbar

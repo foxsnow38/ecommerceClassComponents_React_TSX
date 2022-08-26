@@ -24,3 +24,4 @@ return(
 const useAuth = () =>useContext(AuthContext)
 
 export {AuthProvider,useAuth}
+

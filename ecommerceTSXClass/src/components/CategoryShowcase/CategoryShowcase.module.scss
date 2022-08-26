@@ -1,0 +1,32 @@
+.showFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+align-items: flex-start;
+
+    width: 100%;
+    height: 100%;
+    margin: 0 15px;
+}
+
+.title{
+
+    font-size: 4rem;
+    color: white;
+    font-family: 'Helvetica 65 Medium', sans-serif;
+    font-weight: bold;
+   
+}
+.desc{
+
+    font-size: 1rem;
+    color: white;
+    font-family: 'Helvetica 35 Thin', sans-serif;
+    font-weight: 500;
+}
+.srcBtn{
+    border-radius: 0 !important;
+    color:  white  !important;
+    border: 1px solid #fff !important;
+    &:focus {outline:0 !important;}
+}

@@ -1,7 +1,7 @@
  import React, { Component } from 'react' 
 import { photosContext } from '../../context/PhotosContextProvider/PhotosContextProvider'
   import moduleCSS from './Collections.module.scss' 
-  import { DataView} from 'Primereact/dataview';
+  import { DataView} from 'primereact/dataview';
 
 
   export class Collections extends Component { 

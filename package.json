@@ -16,7 +16,7 @@
     "array.prototype.fill": "^1.0.2",
     "core-js": "^3.25.0",
     "primeicons": "^5.0.0",
-    "primereact": "^8.3.0",
+    "primereact": "^8.4.0",
     "react": "^18.2.0",
     "react-app-polyfill": "^3.0.0",
     "react-dom": "^18.2.0",

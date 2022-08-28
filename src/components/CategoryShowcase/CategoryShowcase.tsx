@@ -1,6 +1,6 @@
  import React, { Component } from 'react' 
   import moduleCSS from './CategoryShowcase.module.scss' 
-  import { Button } from 'Primereact/button';
+  import { Button } from 'primereact/button';
 
 
 

@@ -1,0 +1,12 @@
+{
+  "name": "ecommerceClassComponents_React_TSX",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/foxsnow38/ecommerceClassComponents_React_TSX.git",
+  "author": "foxsnow38 <31081148+foxsnow38@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd ecommerceTSXClass && yarn build",
+    "dev": "cd ecommerceTSXClass && yarn dev"
+  }
+}

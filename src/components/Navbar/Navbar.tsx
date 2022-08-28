@@ -2,9 +2,6 @@
   import moduleCSS from  './Navbar.module.scss' 
   
 import { Menubar } from 'primereact/menubar';
-import { InputText } from 'primereact/InputText';
-
-import { Avatar } from 'primereact/Avatar';
 import {  NavbarContext } from '../../context/NavbarContextProvider/NavbarContextProvider';
 import { Navigate } from 'react-router-dom';
 

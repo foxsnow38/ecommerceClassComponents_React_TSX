@@ -1,10 +1,10 @@
  import React, { Component } from 'react' 
   import moduleCSS from  './Navbar.module.scss' 
   
-import { Menubar } from 'primereact/menubar';
-import { InputText } from 'primereact/InputText';
+import { Menubar } from 'Primereact/menubar';
+import { InputText } from 'Primereact/InputText';
 
-import { Avatar } from 'primereact/Avatar';
+import { Avatar } from 'Primereact/Avatar';
 import {  NavbarContext } from '../../context/NavbarContextProvider/NavbarContextProvider';
 import { Navigate } from 'react-router-dom';
 

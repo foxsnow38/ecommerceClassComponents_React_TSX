@@ -1,6 +1,6 @@
   import React, { Component } from 'react' 
   import moduleCSS from './Mainslider.module.scss' 
-  import { Galleria } from 'primereact/galleria';
+  import { Galleria } from 'Primereact/galleria';
   import './GalleriaDemo.css';
   import { photosContext } from '../../context/PhotosContextProvider/PhotosContextProvider';
 

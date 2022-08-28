@@ -1,7 +1,7 @@
  import React, { Component } from 'react' 
 import { photosContext } from '../../context/PhotosContextProvider/PhotosContextProvider'
   import moduleCSS from './Shop.module.scss' 
-  import { Accordion, AccordionTab } from 'primereact/accordion';
+  import { Accordion, AccordionTab } from 'Primereact/accordion';
 
   export class Shop extends Component<any,any> { 
     static contextType?: React.Context<any> | undefined= photosContext

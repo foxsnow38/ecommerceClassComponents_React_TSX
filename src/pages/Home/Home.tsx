@@ -4,7 +4,7 @@
 
 import CategoryShowcase from '../../components/CategoryShowcase'
 
-import { Image } from 'primereact/image';
+import { Image } from 'Primereact/image';
 import { photosContext } from '../../context/PhotosContextProvider/PhotosContextProvider';
 
 

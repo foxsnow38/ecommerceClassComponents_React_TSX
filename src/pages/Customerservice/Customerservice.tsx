@@ -1,6 +1,6 @@
  import React, { Component } from 'react' 
   import moduleCSS from './Customerservice.module.scss' 
-  import { Accordion, AccordionTab } from 'primereact/accordion';
+  import { Accordion, AccordionTab } from 'Primereact/accordion';
 
 
   export class Customerservice extends Component<{},{activeIndex:number}> { 

@@ -1,0 +1,137 @@
+.topPage{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+.photoPart{
+        width: 65%;
+    img{width: 50%;}
+    }
+}
+
+.accordionPart{
+
+div{
+    border: none !important;
+    color: black;
+font-family: 'Helvetica Neue', sans-serif;
+font-weight:500 ;
+div{
+a{
+    border: none !important;
+    color: black;
+font-family: 'Helvetica Neue', sans-serif;
+border: none !important;
+background: none !important;
+padding: 0 !important;
+padding-bottom: 1.25rem !important;
+}
+}
+}
+
+}
+.detailPart{
+width: 35%;
+padding-left: 5vw;
+color: black;
+font-family: 'Helvetica Neue', sans-serif;
+font-size: 500;
+display: flex;  
+flex-direction: column;
+justify-content: space-around;
+
+position: relative;
+}
+.productTitle{
+    font-size: 2rem;
+}
+.productPrice{
+    font-size: 1.25rem;
+    margin-bottom: 0px !important; 
+}
+.productOffer{
+    font-size: 1.25rem;
+    color: #d8d8d8;
+}
+.productColor{
+    font-size: 1.25rem;
+    color: #d8d8d8;
+}
+.productColorRectangles{
+    margin-top: 2vh;
+    width: 5vh;
+    height: 5vh;
+    background: #F1DCC6;
+    border: 1px solid #000;
+}
+.productSize{
+    font-size: 1.10rem;
+}
+.productSizeList{
+    margin-top: 2vh;
+li{
+    display: block;
+    
+    margin-right: 2vw;
+    float: left;
+ 
+}
+}
+.accordionTitle{
+    color: #000;
+}
+.secondPage{
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 7vh;
+.titlePart{
+    
+color: black;
+font-family: 'Helvetica Neue', sans-serif;
+font-weight: 700;
+
+font-size: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20vh;
+label{
+width: 50%;
+}
+}
+.photoPart{
+        width: 65%;
+    img{width: 50%;}
+    }
+
+}
+.thirdPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh 0px;
+
+ 
+.thirdPageTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: black;
+font-family: 'Helvetica Neue', sans-serif;
+margin-bottom: 2vh;
+}
+
+.PhotoPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    width:90%;
+
+    img{display: block;
+        width: 25%;
+    height: auto;}
+}
+}

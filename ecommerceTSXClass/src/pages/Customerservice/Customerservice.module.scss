@@ -1,0 +1,70 @@
+.accordionArea{
+
+    div{
+        border-bottom: none !important;
+        border-right: none !important;
+        
+        color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight:500 ;
+    div{
+   
+    a{
+        border: none !important;
+
+        color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    border: none ;
+    background: none !important;
+    padding: 0 !important;
+    padding-bottom: 1.25rem !important;
+    }
+    }
+    }
+}
+.accordionTitle{
+    border-top: 2px solid #ddd !important;
+    padding-top: 2vh;
+}
+
+.customerService{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight:500 ;
+    width: 80%;
+    margin: 0 auto;
+}
+.sideBar{
+    width: 20%;
+    padding-left: 1vw;
+    padding-right: 5vh;
+    margin-top: 5vh;
+h4{
+    font-size: 0.9rem;
+    color: #d8d8d8;
+    padding: 2vh 0;
+}
+li{
+    margin-top: 2vh;
+}
+
+
+}
+.accordionArea{
+    width: 70%;
+.accordionPart{
+&:nth-child(1){
+h4{
+    padding-top: 0;
+}
+}
+h4{
+    font-size: 1.25rem;
+    color: #d8d8d8;
+    padding: 3vh 0;
+}
+
+}
+}

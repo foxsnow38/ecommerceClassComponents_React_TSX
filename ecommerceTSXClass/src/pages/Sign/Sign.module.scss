@@ -1,0 +1,103 @@
+.signIn{
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signInForm{
+
+    width: 30vw;
+    padding: 5vh 3vh;
+    
+    background: white;
+    margin-bottom: 20vh;
+    max-width: 500px;
+
+}
+
+.signInTitle{
+    display: flex;
+    margin: 0 10px;
+    margin-top: 4vh;
+label{
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    flex: 1;
+
+}
+
+
+}
+
+
+.formInputArea{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+
+    
+    }
+
+    .email{
+        width: 80%;
+        input{
+            width: 100%;
+            border: none;
+            padding-bottom: 1vh;
+            border-bottom: 1px solid #d8d8d8;
+            outline: 0;
+            &::placeholder{
+                opacity: 0.5;
+            }
+            
+        }
+        
+        }
+        
+.pasword{
+        width: 80%;
+        margin-top: 3vh;
+        outline: 0;
+        input{
+            width: 100%;
+            border: none;
+            padding-bottom: 1vh;
+            border-bottom: 1px solid #d8d8d8;    
+            &::placeholder{
+                opacity: 0.5;
+            }
+        }
+        }
+.SignBtn{
+button{
+    margin-top: 5vh;
+    color: white;
+    background: black;
+    width: 20vw;
+    height: 5vh;
+   
+
+}
+}
+.doYouHaveAcc{
+    
+    text-decoration: underline;
+    margin-top: 2vh;
+
+    color: black;
+
+}
+@media only  screen and (max-width:769px) {
+    
+    .signInForm{ width: 50vw ;}
+}
+@media only  screen and (max-width:426px) {
+    
+    .signInForm{ width: 90vw ;}
+}

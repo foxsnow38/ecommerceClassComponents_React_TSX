@@ -127,7 +127,44 @@ factor in a well-built pair of all-in-ones." srcBtn='SHOP COLLECTION' className=
 </div> 
 </div>  
     
+<div style={{position:"relative"}}>
+<div className={moduleCSS.seventhPage}>
 
+    <div className={moduleCSS.gridPart}>
+    <div className={moduleCSS.labelPart}>
+    <label > {`SHOP INSTAGRAM`}</label>
+    <label className={moduleCSS.LabelShop} > {`SHOP >`}</label>
+    </div>
+
+    <div className={ moduleCSS.photoPart}>
+    <div className={moduleCSS.bigRectangle}>
+    <img  src={context[17].itemImageSrc} width='100%' alt="Image Text" />
+    </div>
+    <div className={`${moduleCSS.gridPhotoPart} ui-grid-col-6`}>
+   
+      <img  src={context[13].itemImageSrc} width='100%' alt="Image Text" />
+    <img  src={context[14].itemImageSrc} width='100%' alt="Image Text" />
+    <img  src={context[15].itemImageSrc} width='100%' alt="Image Text" />
+    <img  src={context[16].itemImageSrc} width='100%' alt="Image Text" />
+
+    </div>
+    </div>
+    
+
+    <div className={moduleCSS.footerLabel}>
+      <label>#MODNINKY</label>
+    </div>
+    </div>
+
+      
+      
+      
+      
+            
+
+</div> 
+</div>  
+    
 
 
 

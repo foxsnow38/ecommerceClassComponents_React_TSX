@@ -1,16 +1,58 @@
 html{
+    font-size: 10px;
 
     --height:112px;
 
 }
 
+.white{
+    position: absolute !important;
+ i{
+        font-size: 2rem;
+         color: white;
+}
+ul{
+
+li{
+a{
+span{
+    color: #fff !important;
+  
+}
+}
+}
+}
+}
+
+
+
+.black{
+    position: relative !important;
+
+    i{
+        font-size: 2rem;
+         color: black;
+}
+    ul{
+    li{
+    a{
+    span{
+        color: #000 !important;
+        background-color: #fff;
+    }
+    }
+    }
+    }
+    }
+    
+
 .Navbar{
     font-family: 'Helvetica Neue', sans-serif !important;
-    font-size: 19px !important;
+    font-size: 1.9rem !important;
     height: 112px !important;
     background: none !important;
     border: none !important;
-    position: absolute !important;
+  
 width: 100%;
  ul{
         flex: 1 !important;
@@ -18,7 +60,7 @@ width: 100%;
 li{
 a{
 span{
-    color: #fff !important;
+   
 }
 }
 }
@@ -26,7 +68,7 @@ span{
     z-index: 10;
 }
 .navbarLogo{
-    font-size:70px !important;
+    font-size:7rem!important;
      font-weight:bold !important;
      flex:1;
      justify-content:center !important;
@@ -39,3 +81,66 @@ span{
 @media screen and  (max-width:1110px ) { 
 .Navbar{font-size: 16px !important;}
  }
+ 
+@media screen and  (max-width:769px ) { 
+html{font-size: 7px;} 
+.white{
+        position: relative;
+        width:50vw;
+        align-items: flex-start !important;
+       padding-top: 2rem !important;
+        padding-left: 2rem !important;
+
+ul{
+        border-radius: 15px;
+        top: 5rem !important;
+        left: 2rem !important;
+li{
+        margin-bottom: 1rem;
+a{
+        justify-content:flex-start !important;
+span{
+                color: #000 !important;
+                background-color: #fff;
+}
+}
+}
+}
+    
+    }
+
+
+
+.black{
+        position: relative;
+        width:50vw;
+        align-items: flex-start !important;
+       padding-top: 2rem !important;
+        padding-left: 2rem !important;
+
+ul{
+        border-radius: 15px;
+        top: 5rem !important;
+        left: 2rem !important;
+li{
+        margin-bottom: 1rem;
+a{
+        justify-content:flex-start !important;
+span{
+                color: #000 !important;
+                background-color: #fff;
+}
+}
+}
+}
+    
+    }
+.navbarLogo{
+        flex:0;
+
+         font-size: 5rem !important;
+}
+
+
+
+     }

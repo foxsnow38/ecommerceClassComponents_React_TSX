@@ -9,3 +9,6 @@
 .p-galleria-item-wrapper{
     display: block !important;
 }
+.p-galleria.p-galleria-indicator-onitem .p-galleria-indicators{
+    background: none !important;
+}

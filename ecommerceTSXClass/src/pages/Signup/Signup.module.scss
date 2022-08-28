@@ -1,0 +1,127 @@
+.signUp{
+    width: 100vw;
+    height: 100vh;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUpForm{
+
+    width: 40vw;
+    padding: 3vh 3vh;
+    
+    background: white;
+    margin-bottom: 20vh;
+    max-width: 500px;
+
+}
+
+.signUpTitle{
+    display: flex;
+    margin: 0 10px;
+    margin-bottom: 7vh;
+label{
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    flex: 1;
+
+}
+
+
+}
+
+
+.formInputArea{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    margin: 0 auto;
+    width: 90%;
+
+    
+    }
+
+    .formInput{
+        width: 100%;
+        margin-bottom: 2vh;
+        input{
+            width: 100%;
+            border: none;
+            padding-bottom: 1vh;
+            border-bottom: 1px solid #d8d8d8;
+            outline: 0;
+            margin-top: 2vh;
+            &::placeholder{
+                font-size: large;
+                opacity: 0.5;
+            }
+            
+        }
+        
+        }
+        
+.SignUpBtn{
+button{
+    margin-top: 5vh;
+    color: white;
+    background: black;
+    width: 20vw;
+    height: 5vh;
+   
+
+}
+}
+.doYouHaveAcc{
+    
+    text-decoration: underline;
+    margin-top: 2vh;
+
+    color: black;
+
+}
+.personalData{
+    display: flex;
+    flex-direction: row;
+
+
+input{
+    margin-right: 10px;
+width: 25px;
+height: 25px;
+accent-color: black;
+
+}
+.personalDesc{
+
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+
+}
+
+
+}
+.personalSigningTerm{
+    margin-top: 10px;
+    color: #8C8C8C;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+span{
+color: black;
+text-decoration: underline;
+
+}
+}
+@media only  screen and (max-width:769px) {
+    
+    .signUpForm{ width: 50vw ;}
+}
+@media only  screen and (max-width:426px) {
+    
+    .signUpForm{ width: 90vw ;}
+}

@@ -6,79 +6,109 @@ import { InputText } from 'primereact/InputText';
 
 import { Avatar } from 'primereact/Avatar';
 import {  NavbarContext } from '../../context/NavbarContextProvider/NavbarContextProvider';
+import { Navigate } from 'react-router-dom';
+
 
 
 type navbarStates ={
-
-   items: any; 
-     BagIndex: any;
-     NavbarContext:any
-     bag:any
-
-}
-  export class Navbar extends Component<{},navbarStates> {
-  
-     static contextType=  NavbarContext
+ 
+   items:object[]
+     nagivate:any,
  
 
 
-constructor(props: {} | Readonly<{}>){
+}
+  export class Navbar extends Component<{color:(`white`| `black` | null)},navbarStates> {
+  
+     static contextType=  NavbarContext
+
+
+
+ 
+
+
+
+     
+constructor(props:any ){
 super(props)
+
+this.state = {
+nagivate:null,
+
+
+
+items:[
+   {
+      label:'NEW ARRIVALS'
+
+   },
+   {
+      label:'SHOP',
+      // url: "/shop?",
+      className:"navbarItem",
+      command:()=>{this.nagivateNavbar(`/shop`)}
+   },
+   {
+      label:'COLLECTIONS',
+      command:()=>{this.nagivateNavbar(`/collections`)}
+   },
+   {
+      label:'LOGO',
+      className:`${moduleCSS.navbarLogo}`,
+      command:()=>{this.nagivateNavbar(`/`)}
+      
+   },
+   {
+      icon:`pi pi-search`,
+      label:'SEARCH',
+   
+   },
+   {
+      label:'SIGNIN'
+   },
+   {
+      label:`BAG(2)`,
+      command:()=>{this.nagivateNavbar(`/bags`)}
+   },
+   {
+      label:'',
+      icon:`pi pi-heart`
+   }
+
+]
+
+}
 }
 
+nagivateNavbar=(nagivate:string)=>{
+   this.setState(state=>({nagivate: nagivate}))
+   setTimeout(() => {
+      this.setState(state=>({nagivate: null}))
+   }, 10);
+   console.log(this.state)
+
+}
+
+
+
+
+
  render(){
-   
-const {bag} = this.context as {bag:number}
 
 
-  const  items = [
-      {
-         label:'NEW ARRIVALS'
-   
-      },
-      {
-         label:'SHOP',
-         // url: "/shop?",
-         className:"navbarItem"
-      },
-      {
-         label:'COLLECTIONS'
-      },
-      {
-         label:'LOGO',
-         className:`${moduleCSS.navbarLogo}`
-         
-      },
-      {
-         icon:`pi pi-search`,
-         label:'SEARCH'
-      },
-      {
-         label:'SIGNIN'
-      },
-      {
-         label:`BAG(${bag})`
-      },
-      {
-         label:'',
-         icon:`pi pi-heart`
-      },
-   
-   ]
 
  return ( 
 
 
+<>
 
-   
+{this.state.nagivate!=null? <Navigate to={`${this.state.nagivate}`}/>:null}
     <Menubar
-  model={items}
+  model={this.state.items}
 
-  className={moduleCSS.Navbar}
-
-
+  className={`${moduleCSS.Navbar} ${this.props.color==`black`?moduleCSS.black:moduleCSS.white} `}
 /> 
-
+</>
  ) 
 }} 
 

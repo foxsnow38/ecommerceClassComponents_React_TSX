@@ -1,3 +1,6 @@
+
+
+
 .homeTopPage{
 position: relative;
 
@@ -62,3 +65,90 @@ margin-bottom:50px ;
 }
 }
 }
+
+.seventhPage{
+
+display: flex;
+justify-content: center;
+margin: 1%;
+.footerLabel{
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight:300 ;
+    margin: 2vh 0;
+}
+.labelPart{
+    color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight:300 ;
+    margin: 2vh 0;
+.LabelShop {
+    margin-left: 5vw;
+}
+}
+img{display: block;
+    object-fit: cover;
+    flex-shrink: 0;}
+.photoPart{
+    display: flex;
+    flex-direction: row;
+
+.bigRectangle{
+    width: 50vh;
+}
+.gridPhotoPart{
+    width: 100vh;
+
+    display: flex;
+    flex-direction: row;
+width: 50vh;
+flex-flow: row wrap;
+img{width: 25vh;
+height: 25vh;}
+}
+}
+}
+
+
+
+@media only screen and (max-width: 1700px) {
+
+.case2{
+    top:20% !important;
+    left: 20% !important;
+}
+
+
+  }
+  
+
+  @media only screen and (max-width: 860px) {
+html{
+    font-size: 8px !important;
+} 
+.CategoryShowCase{
+  
+    
+   
+        width: 45vw;
+        height: 15vh;
+        
+    }
+.fifthPage{
+    display: none;
+}
+.seventhPage{
+      display: none;
+    }
+      }
+
+@media only screen and (max-width: 425px) {
+    .CategoryShowCase{
+        top: 20% !important;
+    }
+
+      }
+
+  

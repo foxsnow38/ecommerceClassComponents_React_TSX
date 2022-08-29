@@ -8,7 +8,7 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": false,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
@@ -17,7 +17,7 @@
     "jsx": "react-jsx",
     "types": [ "node", "webpack-env" ],
     "typeRoots": ["./node_modules/@types"],
-    "forceConsistentCasingInFileNames": false,
+  
     
   },
   "include": ["src"],

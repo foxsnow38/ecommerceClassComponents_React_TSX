@@ -29,6 +29,10 @@ https://www.figma.com/file/3uKwWmbWdekB45fPG9FdHI/Modnikky-__-Free-Fashion-Store
 
 * /customerservice
 
+* /signin
+
+* /signup
+
   
 
 Get start in local :

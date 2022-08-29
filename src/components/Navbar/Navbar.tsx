@@ -61,7 +61,8 @@ items:[
    
    },
    {
-      label:'SIGNIN'
+      label:'SIGNIN',
+      command:()=>{this.nagivateNavbar(`/signin`)}
    },
    {
       label:`BAG(2)`,

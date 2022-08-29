@@ -18,6 +18,7 @@ https://www.figma.com/file/3uKwWmbWdekB45fPG9FdHI/Modnikky-__-Free-Fashion-Store
 
 ### Website:[Vite + React + TS (reactecommertsxclasscomponent.netlify.app)](https://reactecommertsxclasscomponent.netlify.app/)
 
+### Video: https://youtu.be/J6ioDuz-xs8
 #### Routes:
 
 * /shop
